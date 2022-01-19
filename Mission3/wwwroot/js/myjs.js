@@ -70,7 +70,7 @@ $("#calGrade").click(function () {
         letterGrade = "E"
     }
 
-    alert('Final Score: ' + finalScore + " Letter Grade: " + letterGrade)
+    alert('Final Score: ' + finalScore + "% Letter Grade: " + letterGrade)
     ////hide the form  
     //document.getElementById("theForm").style.display = "none"
 
