@@ -1,23 +1,38 @@
-﻿@page
+﻿
 @{
+    ViewData["Title"] = "Mission 3 | Grade Calculator";
 }
+@model GradeCalcModel;
 <!--grade calculator-->
-<div class="text-center" id="theForm">
+<div class="text-center" id="">
     <h4>Grade Calculator</h4>
     <small>Enter as numbers (i.e. 10% as 10)</small>
     <br />
     <br />
-    <label>Assignments Score (Percent)</label><br />
-    <input type="number" name="assigScore" id="assigScore" /><br /><br />
-    <label>Group Project Score (Percent)</label><br />
-    <input type="number" name="groupScore" id="groupScore" /><br /><br />
-    <label>Quiz Score (Percent)</label><br />
-    <input type="number" name="quizScore" id="quizScore" /><br /><br />
-    <label>Exam Score (Percent)</label><br />
-    <input type="number" name="examScore" id="examScore" /><br /><br />
-    <label>Intex Score (Percent)</label><br />
-    <input type="number" name="intexScore" id="intexScore" /><br /><br />
-    <button class="btn btn-large btn-primary" id="calGrade">Calculate</button>
+    <form method="post">
+        <label>Assignments Score (Percent)</label><br />
+        <input asp-for="asScore" id="assigScore" /><br />
+        <span asp-validation-for="asScore" class="text-danger"></span><br /><br />
+
+        <label>Group Project Score (Percent)</label><br />
+        <input asp-for="grScore" id="groupScore" /><br />
+        <span asp-validation-for="grScore" class="text-danger"></span><br /><br />
+
+        <label>Quiz Score (Percent)</label><br />
+        <input asp-for="quScore" id="quizScore" /><br />
+        <span asp-validation-for="quScore" class="text-danger"></span><br /><br />
+
+        <label>Exam Score (Percent)</label><br />
+        <input asp-for="exScore" id="examScore" /><br />
+        <span asp-validation-for="exScore" class="text-danger"></span><br /><br />
+
+        <label>Intex Score (Percent)</label><br />
+        <input asp-for="inScore" id="intexScore" /><br />
+        <span asp-validation-for="inScore" class="text-danger"></span><br /><br />
+
+        <button class="btn btn-large btn-primary" id="calGrade" type="submit">Calculate</button>
+    </form>
+
 </div>
 <!--end grade calculator-->
 <br />
@@ -25,9 +40,9 @@
 <br />
 
 <!--div that shows calculator results-->
-<div id="displayR" class="text-center">
+<div id="" class="text-center">
     <h4>Grade Calculator Results</h4>
-    <br />
+    @*<br />
     <p><strong>Assignment Score %: </strong></p>
     <p id="aScore"></p>
     <br />
@@ -42,7 +57,7 @@
     <br />
     <p><strong>Intex Score %: </strong></p>
     <p id="iScore"></p>
-    <br />
+    <br />*@
     <p><strong>Final Score: </strong></p>
     <p id="fScore"></p>
     <br />

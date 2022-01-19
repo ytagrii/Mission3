@@ -70,16 +70,17 @@ $("#calGrade").click(function () {
         letterGrade = "E"
     }
 
-    //hide the form  
-    document.getElementById("theForm").style.display = "none"
+    alert('Final Score: ' + finalScore + " Letter Grade: " + letterGrade)
+    ////hide the form  
+    //document.getElementById("theForm").style.display = "none"
 
-    //put the calculated values in and show that div
-    $("#fScore").html(finalScore.toString().concat("%. Letter Grade: ", letterGrade));
-    $("#qScore").html(assigQuiz.toString().concat("%"));
-    $("#aScore").html(assigGrade.toString().concat("%"));
-    $("#eScore").html(assigExam.toString().concat("%"));
-    $("#iScore").html(assigIntex.toString().concat("%"));
-    $("#gScore").html(assigGroup.toString().concat("%"));
-    document.getElementById("displayR").style.display = "block"
+    ////put the calculated values in and show that div
+    //$("#fScore").html(finalScore.toString().concat("%. Letter Grade: ", letterGrade));
+    //$("#qScore").html(assigQuiz.toString().concat("%"));
+    //$("#aScore").html(assigGrade.toString().concat("%"));
+    //$("#eScore").html(assigExam.toString().concat("%"));
+    //$("#iScore").html(assigIntex.toString().concat("%"));
+    //$("#gScore").html(assigGroup.toString().concat("%"));
+    //document.getElementById("displayR").style.display = "block"
 });
 
