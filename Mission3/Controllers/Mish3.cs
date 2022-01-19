@@ -10,11 +10,13 @@ namespace Mission3.Controllers
 {
     public class Mish3 : Controller
     {
-        // GET: /<controller>/
+        // Index Page Controller
         public IActionResult Index()
         {
             return View();
         }
+
+        //Grade Calculator Controllers. One for Get and Post
         [HttpGet]
         public IActionResult GradeCalc()
         {

@@ -6,22 +6,22 @@ namespace Mission3.Models
     {
         [Required]
         [Range(0,100)]
-        public int asScore { get; set; }
+        public int Assignment { get; set; }
 
         [Required]
         [Range(0, 100)]
-        public int grScore { get; set; }
+        public int Group { get; set; }
 
         [Required]
         [Range(0, 100)]
-        public int quScore { get; set; }
+        public int Quiz { get; set; }
 
         [Required]
         [Range(0, 100)]
-        public int exScore { get; set; }
+        public int Exam { get; set; }
 
         [Required]
         [Range(0, 100)]
-        public int inScore { get; set; }
+        public int Intex { get; set; }
     }
 }

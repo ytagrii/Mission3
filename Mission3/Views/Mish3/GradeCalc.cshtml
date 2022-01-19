@@ -3,7 +3,7 @@
     ViewData["Title"] = "Mission 3 | Grade Calculator";
 }
 @model GradeCalcModel;
-<!--grade calculator-->
+<!--grade calculator page-->
 <div class="text-center" id="">
     <br />
     <h1 class="text-center">Grade Calculator</h1>
@@ -11,32 +11,33 @@
     <small>Enter as numbers (i.e. 10% as 10)</small>
     <br />
     <br />
+    <!-- Grade calculator  -->
     <form method="post">
         <label>Assignments Score (Percent)</label><br />
-        <input asp-for="asScore" id="assigScore" /><br />
-        <span asp-validation-for="asScore" class="text-danger"></span><br /><br />
+        <input asp-for="Assignment" id="assigScore" /><br />
+        <span asp-validation-for="Assignment" class="text-danger"></span><br /><br />
 
         <label>Group Project Score (Percent)</label><br />
-        <input asp-for="grScore" id="groupScore" /><br />
-        <span asp-validation-for="grScore" class="text-danger"></span><br /><br />
+        <input asp-for="Group" id="groupScore" /><br />
+        <span asp-validation-for="Group" class="text-danger"></span><br /><br />
 
         <label>Quiz Score (Percent)</label><br />
-        <input asp-for="quScore" id="quizScore" /><br />
-        <span asp-validation-for="quScore" class="text-danger"></span><br /><br />
+        <input asp-for="Quiz" id="quizScore" /><br />
+        <span asp-validation-for="Quiz" class="text-danger"></span><br /><br />
 
         <label>Exam Score (Percent)</label><br />
-        <input asp-for="exScore" id="examScore" /><br />
-        <span asp-validation-for="exScore" class="text-danger"></span><br /><br />
+        <input asp-for="Exam" id="examScore" /><br />
+        <span asp-validation-for="Exam" class="text-danger"></span><br /><br />
 
         <label>Intex Score (Percent)</label><br />
-        <input asp-for="inScore" id="intexScore" /><br />
-        <span asp-validation-for="inScore" class="text-danger"></span><br /><br />
+        <input asp-for="Intex" id="intexScore" /><br />
+        <span asp-validation-for="Intex" class="text-danger"></span><br /><br />
 
         <button class="btn btn-large btn-primary" id="calGrade" type="submit">Calculate</button>
     </form>
-
+    <!--end grade calculator-->
 </div>
-<!--end grade calculator-->
+<!--ENd of Grade Calculator page div-->
 <br />
 <br />
 <br />
